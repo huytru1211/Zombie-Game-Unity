@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 5833226939539495130}
   - component: {fileID: 1292228029117153260}
   - component: {fileID: 733571755763882359}
+  - component: {fileID: 165968068153000579}
   m_Layer: 0
   m_Name: lo_CobbleRock_A_LOD1
   m_TagString: Untagged
@@ -147,6 +148,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &165968068153000579
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4524099449167554658}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.85967416
+  m_Center: {x: -0.06718132, y: 0.7783017, z: 0.028111935}
 --- !u!1 &5690347674688905983
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,6 +180,7 @@ GameObject:
   - component: {fileID: 8364900780613312776}
   - component: {fileID: 6217218637242049988}
   - component: {fileID: 5716596060787168599}
+  - component: {fileID: 619032812484606016}
   m_Layer: 0
   m_Name: lo_CobbleRock_A_LOD0
   m_TagString: Untagged
@@ -230,6 +253,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &619032812484606016
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5690347674688905983}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.85365367
+  m_Center: {x: -0.06890315, y: 0.7850035, z: 0.037497073}
 --- !u!1 &7587668978227915174
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,6 +285,7 @@ GameObject:
   - component: {fileID: 8326856910038680666}
   - component: {fileID: 8474123709918768657}
   - component: {fileID: 5505474870903116795}
+  - component: {fileID: 7026462159586345583}
   m_Layer: 0
   m_Name: lo_CobbleRock_A_LOD2
   m_TagString: Untagged
@@ -313,6 +358,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &7026462159586345583
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7587668978227915174}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.83888876
+  m_Center: {x: -0.062239736, y: 0.79189306, z: 0.04995036}
 --- !u!1001 &2603175809331388230
 PrefabInstance:
   m_ObjectHideFlags: 0
