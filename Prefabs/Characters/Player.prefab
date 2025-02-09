@@ -48,7 +48,6 @@ GameObject:
   - component: {fileID: 8460180974229863859}
   - component: {fileID: 8029447296220119334}
   - component: {fileID: 8896536621688033446}
-  - component: {fileID: 3655913524096860120}
   - component: {fileID: 3841379750944657459}
   - component: {fileID: 1764517629221791094}
   m_Layer: 8
@@ -291,23 +290,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
---- !u!114 &3655913524096860120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5405786849135248617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6c448056bb0ef24b899b0354a1ef9f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cinemachineBrain: {fileID: 854303011359045310}
-  zoomedOutFOV: 60
-  zoomedInFOV: 20
-  zoomOutSensitivity: 0
-  zoomInSensitivity: 0
 --- !u!114 &3841379750944657459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,7 +302,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9115e84449978c43a4dbb205002a490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmout: 10
+  ammoSlots:
+  - ammoType: 0
+    ammoAmout: 10
+  - ammoType: 1
+    ammoAmout: 20
+  - ammoType: 2
+    ammoAmout: 8
 --- !u!136 &1764517629221791094
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -826,6 +814,14 @@ PrefabInstance:
       propertyPath: muzzleFlash
       value: 
       objectReference: {fileID: 8473420396017056176}
+    - target: {fileID: 6572519173220523700, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
+      propertyPath: cinemachineBrain
+      value: 
+      objectReference: {fileID: 854303011359045310}
+    - target: {fileID: 6572519173220523700, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
+      propertyPath: cinemachineController
+      value: 
+      objectReference: {fileID: 1723198420046435409}
     - target: {fileID: 7950030854684377607, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -935,7 +931,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7950030854684377607, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7620666995003793151}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7114141935611195917, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5670521533937164538}
   m_SourcePrefab: {fileID: 100100000, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
 --- !u!114 &854303011359045310 stripped
 MonoBehaviour:
@@ -953,6 +952,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8762286023885395322, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
   m_PrefabInstance: {fileID: 8233420862180893637}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1222866675775672776 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7114141935611195917, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
+  m_PrefabInstance: {fileID: 8233420862180893637}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5670521533937164538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222866675775672776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a7e918924e7324d946429ab6d056e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeapon: 0
 --- !u!4 &2024036350001324482 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7950030854684377607, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
